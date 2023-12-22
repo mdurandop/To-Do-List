@@ -1,0 +1,73 @@
+@use '../util/colors' as c;
+
+#contenedor {
+    display: flex;
+}
+
+aside {
+    #sidebar {
+        background-color: c.$sidebar-light;
+        .content {
+            margin-left: 8.5%;
+            width: 380px;
+            height: 100vh;
+            #title {
+                display: flex;
+                padding-top: 8%;
+                gap: 20px;
+                h1 {
+                    color: c.$main-color;
+                    font-size: 4ch;
+                }
+                img {
+                    width: 35px;
+                }
+            }
+
+            .button {
+                cursor: pointer;
+                margin-top: 5%;
+                background-color: c.$button-color;
+                max-width: 300px;
+                padding: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 30px;
+                border-radius: 60px;
+                p {
+                    font-size: 2ch;
+                    color: c.$button-text;
+                }
+            }
+
+            p {
+                font-size: 2ch;
+
+            }
+
+            .selected {
+                color: c.$main-color;
+            }
+
+            .tareas {
+                p {
+                    cursor: pointer;
+                }
+                padding-top: 5%;
+                padding-bottom: 5%;
+            }
+
+            hr {
+                margin-top: 25px;
+                color: #1D3872;
+                width: 300px;
+            }
+
+            h2 {
+                color: c.$main-color;
+                margin-top: 5%;
+            }
+        }
+    }
+}
