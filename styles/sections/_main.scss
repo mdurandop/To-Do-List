@@ -108,6 +108,8 @@ main {
         user-select: none;
         cursor: pointer;
         position: relative;
+        display: flex;
+        justify-content: space-between;
     }
 
     ul li::before {
@@ -117,6 +119,7 @@ main {
         width: 28px;
         border-radius: 50%;
         background: url(/images/unchecked.svg);
+        transition: 0.5s;
         background-size: cover;
         background-position: center;
         top: 12px;
@@ -129,8 +132,24 @@ main {
     }
 
     ul li.checked::before {
+        transition: 0.5s;
         background: url(/images/checked.svg);
         background-repeat: no-repeat;
         margin-left: 2px;
+    }
+
+    li span {
+        position: absolute;
+        right: 0;
+        top: 5px;
+        text-align: center;
+        font-size: 2ch;
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+        &:hover {
+            background-color: #edeef0;
+            border-radius: 50%;
+        }
     }
 }
