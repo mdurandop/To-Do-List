@@ -6,6 +6,7 @@
 
 aside {
     #sidebar {
+        position: fixed;
         background-color: c.$sidebar-light;
         .content {
             margin-left: 8.5%;
