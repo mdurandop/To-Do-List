@@ -1,8 +1,8 @@
 @use '../util/colors' as c;
 
 main {
-    width: 100vw;
-    margin-left: 22vw;
+    flex: 1;
+    padding-left: 33%;
     .title-options {
         display: flex;
         padding-top: 5%;
