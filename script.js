@@ -1,3 +1,13 @@
+function darkMode() {
+    document.body.classList.add("dark-mode");
+    document.body.classList.remove("light-mode");
+}
+
+function lightMode() {
+    document.body.classList.add("light-mode");
+    document.body.classList.remove("dark-mode")
+}
+
 const inputBox = document.getElementById('input-box');
 const listContainer = document.getElementById('list-container');
 const pendientes = document.querySelector('.contador-pendientes');
